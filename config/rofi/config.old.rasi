@@ -1,0 +1,78 @@
+configuration {
+  modi: "drun";
+  display-drun: "";
+  drun-display-format: "{name}";
+  font: "Jetbrains Mono 10";
+  show-icons: true;
+}
+
+@theme "/dev/null"
+
+* {
+  bg: #151515;
+  fg: #d0d0d0;
+  alt: #1c1c1c;
+  rad: 10px;
+
+  background-color: @bg;
+  text-color: @fg;
+}
+
+mainbox {
+  children: [ inputbar, listview ];
+  padding: 1.5em;
+  spacing: 1em;
+}
+
+inputbar {
+  children: [ prompt, entry ];
+  border-radius: @rad;
+  background-color: @alt;
+}
+
+prompt, entry, element selected {
+  vertical-align: 0.5;
+  background-color: @alt;
+}
+
+prompt {
+   padding: 1.5%;
+   font: "feather 14";
+}
+
+entry {
+  blink: false;
+  padding: 0 1.5% 0 0;
+  placeholder: "Search through apps";
+  placeholder-color: grey;
+}
+
+listview {
+  layout: vertical;
+  lines: 3;
+  columns: 4;
+  cycle: false;
+}
+
+element {
+  orientation: vertical;
+  padding: 1em;
+  border-radius: @rad;
+}
+
+element-text, element-icon {
+  horizontal-align: 0.5;
+  background-color: inherit;
+}
+
+element-text { expand: true; }
+element-icon { size: 48px; }
+
+listview, element, element selected, element-text, element-icon {
+  cursor: pointer;
+}
+
+entry {
+  cursor: text;
+}
+
