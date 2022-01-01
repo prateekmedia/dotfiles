@@ -1,5 +1,5 @@
 <h1 align="center">Dotfiles</h1>
-<h4 align="center">dotfiles of prateekmedia, based on [Manas140's dotfiles](https://github.com/Manas140/dotfiles.git)</h4>
+<h4 align="center">dotfiles of prateekmedia, based on <a href="https://github.com/Manas140/dotfiles.git">Manas140's</a> awesome dotfiles</h4>
 
 <p align="center">
     <a href="https://github.com/prateekmedia/dotfiles/stargazers"><img src="https://img.shields.io/github/stars/prateekmedia/dotfiles?colorA=151515&colorB=6A9FB5&style=for-the-badge&logo=starship"></a>
@@ -90,6 +90,10 @@ Lock:
 </code></pre>
 
 # Thanks
-<pre><code>  <a href="https://github.com/joniv2">Joni</a>: <a href="https://github.com/joniv2/rofi">rofi</a>, <a href="https://github.com/joniv2/walls">walls</a>
-  <a href="https://github.com/FrenzyExists">FrenzyExists</a>: <a href="https://github.com/FrenzyExists/wallpapers">wallpapers</a>
-</code></pre>
+
+<pre>
+<code><a href="https://github.com/Manas140">Manas140</a> : <a href="https://github.com/Manas140/dotfiles">dotfiles</a>
+<a href="https://github.com/ericmurphyxyz">Eric Murphy</a>: <a href="https://github.com/ericmurphyxyz/archrice">archrice</a>
+<a href="https://github.com/joniv2">Joni</a>: <a href="https://github.com/joniv2/rofi">rofi</a>, <a href="https://github.com/joniv2/walls">walls</a>
+<a href="https://github.com/FrenzyExists">FrenzyExists</a>: <a href="https://github.com/FrenzyExists/wallpapers">wallpapers</a>
+  </code></pre>
