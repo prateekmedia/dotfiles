@@ -35,7 +35,7 @@ for i in ${terminal[@]}; do
     bspc rule -a $i desktop='^1' follow=on focus=on; done
 
 # workspace 2 (Internet Browser)
-declare -a web=(firefox discord)
+declare -a web=(firefox persepolis discord)
 for i in ${web[@]}; do
     bspc rule -a $i desktop='^2' follow=on focus=on; done
 
@@ -56,7 +56,7 @@ for i in ${media[@]}; do
     bspc rule -a $i desktop='^5' follow=on focus=on; done
 
 # floating windows
-declare -a floats=(Alafloat Lxappearance Arandr sxiv mpv \
-Viewnior mplayer2 feh Nm-connection-editor Matplotlib Yad)
-for i in ${floats[@]}; do
-  bspc rule -a $i state=floating follow=on focus=on; done
+#declare -a floats=(Alafloat Lxappearance Arandr sxiv mpv \
+#Viewnior mplayer2 feh Nm-connection-editor Matplotlib Yad)
+#for i in ${floats[@]}; do
+#  bspc rule -a $i state=floating follow=on focus=on; done

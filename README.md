@@ -67,7 +67,7 @@ Lock:
 
 # Requirements
 - ksuperkey - For Binding Alt F1 to super
-- picom-git - As picom is not up to date in arch
+- picom-ibhagwan-git - Or Compiler the next-rebase branch of ibhagwan
 
 # Stuffs In Rice
 ```
