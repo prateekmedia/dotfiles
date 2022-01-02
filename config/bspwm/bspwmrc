@@ -7,6 +7,8 @@ xrandr --output HDMI-0 --scale 0.5
 killall sxhkd; sxhkd &
 killall picom; picom &
 killall dunst; dunst &
+killall ksuperkey; ksuperkey -e 'Super_L=Alt_L|F1' &
+ksuperkey -e 'Super_R=Alt_L|F1' &
 feh --bg-fill -r -z ~/Pictures/Wallpapers &
 redshift -x && redshift -O 4000k &
 xsetroot -cursor_name left_ptr &
@@ -55,6 +57,6 @@ for i in ${media[@]}; do
 
 # floating windows
 declare -a floats=(Alafloat Lxappearance Arandr sxiv mpv \
-Viewnior mplayer2 Pcmanfm feh Nm-connection-editor Matplotlib Yad)
+Viewnior mplayer2 feh Nm-connection-editor Matplotlib Yad)
 for i in ${floats[@]}; do
   bspc rule -a $i state=floating follow=on focus=on; done

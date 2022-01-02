@@ -38,9 +38,9 @@ Lock:
 ```
   super + Return kitty
 
-  super + r rofi
+  super rofi
 
-  Print flameshot
+  Print flameshot's full screen screenshot
 
   super + [1-9] focus on desktop 1-9
 
@@ -48,7 +48,7 @@ Lock:
 
   super + shift + l lock screen (i3 lock)
 
-  super + shift + e exit wm
+  super + x power menu
 
   super + esc restart wm 
 
@@ -64,6 +64,10 @@ Lock:
 
   super + space toggle fullscreen
 ```
+
+# Requirements
+- ksuperkey - For Binding Alt F1 to super
+- picom-git - As picom is not up to date in arch
 
 # Stuffs In Rice
 ```
@@ -82,7 +86,7 @@ Lock:
 # Others
 <pre><code>  ImageViewer: feh/qeh
   MusicPlayer: musikcube
-  Fetch: pfetch
+  Fetch: <a href="https://github.com/Manas140/fetch">fetch</a>
   MusicVisualiser: cava
   ScreenShot: flameshot, maim
   TextEditor: nvim - <a href="https://github.com/Nvchad">Nvchad</a>
