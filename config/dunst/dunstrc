@@ -15,7 +15,7 @@
   separator_color = "#151515"
 
   sort = no
-  font = JetBrains Mono 12
+  font = JetBrainsMono Nerd Font 16
   markup = full
   format = "<b>%s</b>\n%b"
   alignment = left

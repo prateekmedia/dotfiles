@@ -5,7 +5,7 @@ super + x
 super + Return
   kitty
 
-super + r
+alt + F1
   rofi -show
 
 #Screenshot
@@ -22,10 +22,7 @@ super + {_,shift + }{1-9,0}
 super + shift + l
   lock
 
-super + shift + e
-  bspc quit
-
-super + @Escape
+super + Escape
   bspc wm -r
 
 #Hardware
@@ -45,7 +42,7 @@ super + Tab
   bspc node -t {floating,tiled}
 
 super + q
-  bspc node -{c,k}
+  bspc node -c
 
 alt + Tab
   bspc node -f next.local.!hidden.window
@@ -60,11 +57,11 @@ super + space
   bspc node -t \~fullscreen
 
 # Apps
-super + shift + f
+super + shift + w
   firefox
 
-super + shift + t
-  thunar
+super + shift + f
+  pcmanfm || thunar
 
 super + shift + c
-  code
+  code || codium
