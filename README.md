@@ -90,7 +90,7 @@ Lock:
   MusicVisualiser: cava
   ScreenShot: flameshot, maim
   TextEditor: nvim - <a href="https://github.com/Nvchad">Nvchad</a>
-  FileManager: thunar, ranger
+  FileManager: pcmanfm, thunar, ranger
 </code></pre>
 
 # Thanks
