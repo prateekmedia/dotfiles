@@ -57,11 +57,11 @@ super + space
   bspc node -t \~fullscreen
 
 # Apps
-super + shift + w
+super + w
   firefox
 
-super + shift + f
+super + f
   pcmanfm || thunar
 
-super + shift + c
+super + c
   code || codium
