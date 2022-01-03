@@ -2,7 +2,7 @@ configuration {
   modi: "drun";
   display-drun: "";
   drun-display-format: "{name}";
-  font: "Jetbrains Mono 10";
+  font: "JetbrainsMono Nerd Font 10";
   show-icons: true;
 }
 
