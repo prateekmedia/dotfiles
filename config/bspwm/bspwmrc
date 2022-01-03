@@ -2,6 +2,7 @@
 
 # Set Correct Scaling
 xrandr --output HDMI-0 --scale 0.5
+#xrandr -s 1920x1080
 
 #Autostart
 killall sxhkd; sxhkd &
