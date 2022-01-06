@@ -3,8 +3,8 @@
 dir="$HOME/.config/polybar"
 
 launch_bar() {
-  killall polybar
-  while pgrep polybar; do killall polybar; done
+  pkill polybar
+  while pgrep polybar; do pkill polybar; done
   polybar -q main -c "$dir/config.ini"
 }
 

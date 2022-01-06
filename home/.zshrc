@@ -19,6 +19,12 @@ alias mv='printf "\033[1;34m" && mv -v'
 alias mkdir='printf "\033[1;33m" && mkdir -v'
 alias rmdir='printf "\033[1;35m" && rmdir -v'
 
+#Plugins
+plugins=( 
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+)
+
 # History
 HISTSIZE=500
 SAVEHIST=1000
@@ -31,6 +37,9 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
 
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 #binds
 bindkey "^[[3~" delete-char
 bindkey "^A" beginning-of-line
@@ -38,3 +47,10 @@ bindkey "^Q" end-of-line
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
+# Flutter sdk
+export PATH="$HOME/dev/flutter/bin:$PATH"
+
+#Android studio
+export ANDROID_HOME="$HOME/Android/Sdk:$ANDROID_HOME"
+export PATH="$ANDROID_HOME/tools/bin:$PATH"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
