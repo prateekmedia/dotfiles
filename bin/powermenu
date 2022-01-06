@@ -3,8 +3,8 @@
 chosen=$(printf "  Power Off\n  Restart\n  Lock\n  Log Out" | rofi -dmenu -i -theme-str '@import "power.rasi"')
 
 case "$chosen" in
-	"  Power Off") poweroff ;;
-	"  Restart") reboot ;;
+	"  Power Off") sudo poweroff ;;
+	"  Restart") sudo reboot ;;
 	"  Lock") sh $HOME/.local/bin/lock ;;
 	"  Log Out") bspc quit ;;
 	*) exit 1 ;;
