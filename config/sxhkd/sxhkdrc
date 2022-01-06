@@ -3,7 +3,7 @@ super + x
   powermenu
 
 super + Return
-  kitty
+  alacritty
 
 alt + F1
   rofi -show
@@ -58,10 +58,10 @@ super + space
 
 # Apps
 super + w
-  firefox
+  firefox &> /dev/null
 
 super + f
-  pcmanfm || thunar
+  pcmanfm &> /dev/null || thunar &> /dev/null
 
 super + c
-  code || codium
+  code-oss &> /dev/null || code &> /dev/null || codium &> /dev/null
