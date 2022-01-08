@@ -10,22 +10,22 @@
 # Preview
 Floating Usage:
 <p align="center">
-  <img src="preview/floating.png"> 
+  <img src="https://user-images.githubusercontent.com/41370460/148651209-f3d12655-e544-4472-8854-8a612d8ca8c1.jpg"> 
 </p>
 
 Tiled Usage:
 <p align="center"> 
- <img src="preview/tiled.png">
+ <img src="https://user-images.githubusercontent.com/41370460/148651211-8ae3b189-dc9c-435d-ac54-f7467b60fb65.jpg">
 </p>
 
 Rofi:
 <p align="center">
-  <img src="preview/rofi.png">
+  <img src="https://user-images.githubusercontent.com/41370460/148651214-aff17592-070a-4517-90c6-ed11e76bccc3.jpg">
 </p>
 
 Lock:
 <p align="center">
-  <img src="preview/lock.png">
+  <img src="https://user-images.githubusercontent.com/41370460/148651213-aebe6c7b-c177-428d-9cec-ed7d292fdb17.jpg">
 </p>
 
 # Installation
