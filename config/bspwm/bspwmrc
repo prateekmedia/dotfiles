@@ -3,15 +3,16 @@
 # Set Correct Scaling
 xrandr --output HDMI-0 --scale 0.5
 #xrandr -s 1920x1080
+#pipewire& pipewire-pulse&
 
 #Autostart
-pkill sxhkd; sxhkd &
-pkill picom; picom &
+pgrep -x sxhkd > /dev/null || sxhkd &
+pkill picom; picom --experimental-backends &
 pkill dunst; dunst &
 pkill ksuperkey; ksuperkey -e 'Super_L=Alt_L|F1' &
-ksuperkey -e 'Super_R=Alt_L|F1' &
 feh --bg-fill -r -z ~/Pictures/Wallpapers &
 redshift -x && redshift -O 4000k &
+xsetroot -cursor_name left_ptr &
 $HOME/.config/polybar/launch.sh &
 
 #Workspaces
@@ -31,7 +32,7 @@ for i in ${terminal[@]}; do
     bspc rule -a $i desktop='^1' follow=on focus=on; done
 
 # workspace 2 (Internet Browser)
-declare -a web=(firefox persepolis discord)
+declare -a web=(Firefox persepolis discord)
 for i in ${web[@]}; do
     bspc rule -a $i desktop='^2' follow=on focus=on; done
 
@@ -41,9 +42,11 @@ for i in ${filem[@]}; do
     bspc rule -a $i desktop='^3' follow=on focus=on; done
 
 # workspace 4 (Text Editor)
-declare -a office=("Code - OSS" Code VSCodium Geany)
+declare -a office=(Code VSCodium Geany)
 for i in ${office[@]}; do
     bspc rule -a $i desktop='^4' follow=on focus=on; done
+
+bspc rule -a "Code - OSS" desktop='^4' follow=on focus=on
 
 # workspace 5 (Media)
 declare -a media=(vlc obs mpv mplayer lxmusic Gimp Gimp-2.10 \
