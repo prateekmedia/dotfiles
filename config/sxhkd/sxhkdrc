@@ -41,7 +41,7 @@ XF86MonBrightnessDown
 super + Tab
   bspc node -t {floating,tiled}
 
-super + q
+super + w
   bspc node -c
 
 alt + Tab
@@ -57,11 +57,14 @@ super + space
   bspc node -t \~fullscreen
 
 # Apps
-super + w
+super + @b
   firefox &> /dev/null
 
-super + f
+super + @g
+  geany &> /dev/null
+
+super + @f
   pcmanfm &> /dev/null || thunar &> /dev/null
 
-super + c
+super + @c
   code-oss &> /dev/null || code &> /dev/null || codium &> /dev/null

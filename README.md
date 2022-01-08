@@ -35,39 +35,36 @@ Lock:
 ```
 
 # KeyBinds
-```
-  super + Return kitty
+## General
+| Key | Function |
+| --- | -------- |
+| Print | flameshot's full screen screenshot |
+| super + [1-9] | focus on desktop 1-9 |
+| super + shift + [1-9] | move focused window to desktop 1-9 |
+| super + shift + l | lock screen (i3 lock) |
+| super + esc | restart wm | 
+| super + Tab | toggle floating/tiling |
+| super + w | kill focused window |
+| alt + Tab | toggle window focus |
+| super + Arrows [Up,Down,Left,Right] | resize window |
+| super + shift + [Up,Down,Left,Right] | swap window |
+| super + space | toggle fullscreen |
 
-  super rofi
-
-  Print flameshot's full screen screenshot
-
-  super + [1-9] focus on desktop 1-9
-
-  super + shift + [1-9] move focused window to desktop 1-9
-
-  super + shift + l lock screen (i3 lock)
-
-  super + x power menu
-
-  super + esc restart wm 
-
-  super + Tab toggle floating/tiling
-
-  super + q kill focused window
-
-  alt + Tab toggle window focus
-
-  super + Arrows [Up,Down,Left,Right] resize window
-
-  super + shift + [Up,Down,Left,Right] swap window
-
-  super + space toggle fullscreen
-```
+## Apps
+| Key | App |
+| --- | -------- |
+| super | rofi |
+| super + Return | kitty |
+| super + b | Firefox |
+| super + c | Code |
+| super + g | Geany |
+| super + f | File Manager |
+| super + x | power menu |
 
 # Requirements
 - ksuperkey - For Binding Alt F1 to super
 - picom-ibhagwan-git - Or Compiler the next-rebase branch of ibhagwan
+- zentity: For password popups in power menu
 
 # Stuffs In Rice
 ```
