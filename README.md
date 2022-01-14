@@ -1,4 +1,4 @@
-<h1 align="center">Dotfiles</h1>
+<h1 align="center">Floating - Dotfiles</h1>
 <h4 align="center">dotfiles of prateekmedia, based on <a href="https://github.com/Manas140/dotfiles.git">Manas140's</a> awesome dotfiles</h4>
 
 <p align="center">
