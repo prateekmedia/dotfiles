@@ -2,6 +2,7 @@
 PS1="%F{green}%B%~/%b%f "
 
 #Exports 
+export QT_QPA_PLATFORMTHEME=qt5ct
 export PATH="$HOME/.local/bin/:$PATH"
 
 # Aliases
@@ -18,17 +19,6 @@ alias cp='printf "\033[1;32m" && cp -rv'
 alias mv='printf "\033[1;34m" && mv -v'
 alias mkdir='printf "\033[1;33m" && mkdir -v'
 alias rmdir='printf "\033[1;35m" && rmdir -v'
-
-#Plugins
-plugins=( 
-    zsh-syntax-highlighting
-    zsh-autosuggestions
-)
-
-# History
-HISTSIZE=500
-SAVEHIST=1000
-HISTFILE=.cache/zsh_history
 
 # Tab completion
 autoload -U compinit
@@ -51,6 +41,6 @@ bindkey "^[[1;5D" backward-word
 export PATH="$HOME/dev/flutter/bin:$PATH"
 
 #Android studio
-export ANDROID_HOME="$HOME/Android/Sdk:$ANDROID_HOME"
+export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH="$ANDROID_HOME/tools/bin:$PATH"
 export PATH="$ANDROID_HOME/platform-tools:$PATH"

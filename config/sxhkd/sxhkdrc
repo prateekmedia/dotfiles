@@ -3,7 +3,7 @@ super + x
   ~/.local/bin/powermenu
 
 super + Return
-  alacritty
+   kitty &> /dev/null || alacritty &> /dev/null
 
 alt + F1
   rofi -show

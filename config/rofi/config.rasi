@@ -1,80 +1,55 @@
 configuration {
   modi: "drun";
   display-drun: "";
-  drun-display-format: "{name}";
-  font: "JetbrainsMono Nerd Font 10";
+  drun-display-format: "{icon}";
   show-icons: true;
+  font: "JetBrainsMono Nerd Font 10";
 }
 
 @theme "/dev/null"
 
 * {
   bg: #151515;
-  fg: #d0d0d0;
-  
-  fg-alt: #969695;
-  bg-alt: #2e2e2e;
-  rad: 10px;
-
+  fg: #E8E3E3;
+  al: #2e2e2e;
   background-color: @bg;
-
-  border: 0;
-  margin: 0;
-  padding: 0;
-  spacing: 0;
+  text-color: @fg;
 }
 
 window {
-  width: 30%;
+  location: north;
+  width: 100%;
+  children: [ horibox ];
 }
-
+prompt {
+  font: "feather 12";
+  background-color: @al;
+  vertical-align: 0.5;
+  padding: 0.6em 0.75em;
+}
+horibox {
+  orientation: horizontal;
+  children: [ prompt, entry, listview ];
+}
+listview {
+  layout: horizontal;
+  spacing: 0.5em;
+  lines: 100;
+}
+entry {
+  placeholder: "Search...";
+  expand: false;
+  width: 25%;
+  padding: 0.65em;
+}
 element {
-  padding: 8 0;
-  text-color: @fg-alt;
+  padding: 0.65em 0.75em;
 }
-
 element selected {
-  text-color: @fg;
+  background-color: @al;
 }
-
-element-text {
+element-text, element-icon {
   background-color: inherit;
   text-color: inherit;
-  vertical-align: 0.5;
 }
-
-element-icon {
-  size: 30;
-}
-
-entry {
-  background-color: @bg-alt;
-  padding: 12;
-  text-color: @fg;
-}
-
-inputbar {
-  children: [prompt, entry];
-}
-
-listview {
-  padding: 8 12;
-  background-color: @bg;
-  columns: 1;
-  lines: 8;
-}
-
-mainbox {
-  background-color: @bg;
-  children: [inputbar, listview];
-}
-
-prompt {
-  background-color: @bg-alt;
-  enabled: true;
-  padding: 12 0 0 12;
-  text-color: @fg;
-}
-
-/* vim: ft=sass
 

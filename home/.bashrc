@@ -5,6 +5,7 @@
 PS1='\033[1;32m\w/\033[0;0m '
 
 #Exports 
+export QT_QPA_PLATFORMTHEME=qt5ct
 export PATH="$HOME/.local/bin/:$PATH"
 
 # Aliases

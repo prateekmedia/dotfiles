@@ -1,67 +1,34 @@
-
+# Terminal Emulator Settings
 window:
   padding:
     x: 20
     y: 20
-  class:
-    instance: Alacritty
-    general: Alacritty
+  scrolling:
+    history: 15
 
-scrolling:
-  history: 10000
+# Setting zsh as the default shell
+shell:
+    program: /bin/zsh
+
+# Font
 font:
   normal:
     family: JetBrainsMono Nerd Font
-    style:  Medium
+    style: Medium
+
   bold:
     family: JetBrainsMono Nerd Font
-    style:  Bold
+    style: Bold
+
   italic:
     family: JetBrainsMono Nerd Font
-    style:  MediumItalic
+    style: Italic
+
   bold_italic:
-    family: JetBrains Mono Nerd Font
-    style: BoldItalic
-  size: 14.0
+    family: JetBrainsMono Nerd Font
+    style: Bold Italic
 
-draw_bold_text_with_bright_colors: true
+  size: 14
 
-colors:
-  primary:
-    background: "#151515"
-    foreground: "#D0D0D0"
-  normal:
-    black: "#32344a"
-    red: "#f7768e"
-    green: "#9ece6a"
-    yellow: "#e0af68"
-    blue: "#7aa2f7"
-    magenta: "#ad8ee6"
-    cyan: "#449dab"
-    white: "#787c99"
-  bright:
-    black: "#444b6a"
-    red: "#ff7a93"
-    green: "#b9f27c"
-    yellow: "#ff9e64"
-    blue: "#7da6ff"
-    magenta: "#bb9af7"
-    cyan: "#0db9d7"
-    white: "#acb0d0"
-
-background_opacity: 1
-
-cursor:
-  style:
-    shape: block
-
-selection:
-  save_to_clipboard: false
-
-live_config_reload: true
-
-shell:
-  program: /usr/bin/zsh
-
-key_bindings:
-  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
+import:
+  - ~/.config/alacritty/paradise.yml

@@ -3,10 +3,9 @@
 # Set Correct Scaling
 xrandr --output HDMI-0 --scale 0.5
 #xrandr -s 1920x1080
-#pipewire& pipewire-pulse&
 
 #Autostart
-pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x sxhkd > /dev/null || sxhkd > /dev/null &!
 pkill picom; picom --experimental-backends &
 pkill dunst; dunst &
 pkill ksuperkey; ksuperkey -e 'Super_L=Alt_L|F1' &
@@ -20,7 +19,7 @@ bspc monitor -d 1 2 3 4 5 6
 
 #Others
 bspc config border_width 0
-bspc config window_gap 6
+bspc config window_gap 10
 bspc config split_ratio 0.50
 bspc config borderless_monocle true
 bspc config gapless_monocle false
