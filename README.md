@@ -8,24 +8,8 @@
 </p>
 
 # Preview
-Floating Usage:
 <p align="center">
-  <img src="preview/floating.png"> 
-</p>
-
-Tiled Usage:
-<p align="center"> 
- <img src="preview/tiled.png">
-</p>
-
-Rofi:
-<p align="center">
-  <img src="preview/rofi.png">
-</p>
-
-Lock:
-<p align="center">
-  <img src="preview/lock.png">
+  <img src="https://user-images.githubusercontent.com/41370460/149572672-1ebdafa8-491d-4427-bfce-9bff40ea3bd1.gif"> 
 </p>
 
 # Installation
