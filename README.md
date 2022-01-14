@@ -47,7 +47,7 @@
 
 # Requirements
 - ksuperkey - For Binding Alt F1 to super
-- picom-ibhagwan-git - Or Compiler the next-rebase branch of ibhagwan
+- picom-ibhagwan - The `next-rebase` branch of ibhagwan's picom fork
 - zentity: For password popups in power menu
 
 # Stuffs In Rice
