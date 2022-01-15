@@ -17,7 +17,7 @@
 #   Arch repositories: rofi, bluez-utils (contains bluetoothctl)
 
 # Constants
-divider="---------"
+divider="|"
 goback="Back"
 
 # Checks if bluetooth controller is powered on

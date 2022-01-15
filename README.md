@@ -48,7 +48,6 @@
 # Requirements
 - ksuperkey - For Binding Alt F1 to super
 - picom-ibhagwan - The `next-rebase` branch of ibhagwan's picom fork
-- zentity: For password popups in power menu
 
 # Stuffs In Rice
 ```
@@ -65,7 +64,8 @@
 ```
 
 # Others
-<pre><code>  ImageViewer: feh/qeh
+<pre><code>
+  ImageViewer: feh/qeh
   MusicPlayer: musikcube
   Fetch: <a href="https://github.com/Manas140/fetch">fetch</a>
   MusicVisualiser: cava

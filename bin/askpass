@@ -1,2 +1,6 @@
 #!/bin/sh
-zenity --password --title=Authentication
+rofi -dmenu \
+	-password \
+	-no-fixed-num-lines \
+	-theme-str 'entry { placeholder: "Enter your password"; }' \
+	-p "$(printf "$1" | sed s/://)"
