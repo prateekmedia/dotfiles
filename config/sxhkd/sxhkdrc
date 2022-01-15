@@ -41,7 +41,7 @@ XF86MonBrightnessDown
 super + Tab
   bspc node -t {floating,tiled}
 
-super + w
+super + q
   bspc node -c
 
 alt + Tab
@@ -56,8 +56,15 @@ super + shift + {Up,Down,Left,Right}
 super + space
   bspc node -t \~fullscreen
 
-# Apps
+# Rofi actions
+super + @n
+  ~/.local/bin/wifimenu
+
 super + @b
+  ~/.local/bin/rofi-bluetooth
+
+# Apps
+super + @w
   firefox &> /dev/null
 
 super + @g

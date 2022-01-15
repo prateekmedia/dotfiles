@@ -17,7 +17,7 @@
 #   Arch repositories: rofi, bluez-utils (contains bluetoothctl)
 
 # Constants
-divider="|"
+divider="|\0nonselectable\x1ftrue"
 goback="Back"
 
 # Checks if bluetooth controller is powered on
@@ -230,7 +230,7 @@ device_menu() {
 
     # Match chosen option to command
     case $chosen in
-        "" | $divider)
+        "")
             echo "No option chosen."
             ;;
         $connected)

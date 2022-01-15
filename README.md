@@ -28,7 +28,7 @@
 | super + shift + l | lock screen (i3 lock) |
 | super + esc | restart wm | 
 | super + Tab | toggle floating/tiling |
-| super + w | kill focused window |
+| super + q | kill focused window |
 | alt + Tab | toggle window focus |
 | super + Arrows [Up,Down,Left,Right] | resize window |
 | super + shift + [Up,Down,Left,Right] | swap window |
@@ -37,13 +37,15 @@
 ## Apps
 | Key | App |
 | --- | -------- |
-| super | rofi |
-| super + Return | kitty |
-| super + b | Firefox |
+| super | Rofi |
+| super + Return | Kitty |
+| super + w | Firefox |
 | super + c | Code |
 | super + g | Geany |
 | super + f | File Manager |
-| super + x | power menu |
+| super + x | Power menu |
+| super + b | Bluetooth menu |
+| super + n | Network / Wifi Menu |
 
 # Requirements
 - ksuperkey - For Binding Alt F1 to super
