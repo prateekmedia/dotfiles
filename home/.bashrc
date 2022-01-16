@@ -5,11 +5,11 @@
 PS1='\033[1;32m\w/\033[0;0m '
 
 #Exports 
-export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORMTHEME=gtk2
 export PATH="$HOME/.local/bin/:$PATH"
 
 # Aliases
-alias ls='ls --color=auto'
+alias ls='ls -t --color=auto'
 alias cls='clear'
 alias py='python3'
 alias pip='pip3'

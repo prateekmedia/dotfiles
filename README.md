@@ -22,7 +22,6 @@
 ## General
 | Key | Function |
 | --- | -------- |
-| Print | flameshot's full screen screenshot |
 | super + [1-9] | focus on desktop 1-9 |
 | super + shift + [1-9] | move focused window to desktop 1-9 |
 | super + shift + l | lock screen (i3 lock) |
@@ -43,9 +42,14 @@
 | super + c | Code |
 | super + g | Geany |
 | super + f | File Manager |
-| super + x | Power menu |
+
+# Rofi Scripts
+| Key | Script |
+| --- | ------ |
 | super + b | Bluetooth menu |
 | super + n | Network / Wifi Menu |
+| super + p | Screenshot Capture Script |
+| super + x | Power Menu |
 
 # Requirements
 - ksuperkey - For Binding Alt F1 to super

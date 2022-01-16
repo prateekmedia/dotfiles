@@ -1,11 +1,16 @@
 #! /bin/sh
 
-chosen=$(printf "  Power Off\n  Restart\n  Lock\n  Log Out" | rofi -dmenu -i -theme-str '@import "power.rasi"' -p "Power options")
+poweroff="  Power Off"
+restart="  Restart"
+lock="  Lock"
+logout="  Log Out"
+
+chosen=$(printf "$poweroff\n$restart\n$lock\n$logout" | rofi -dmenu -i -p "Power options")
 export SUDO_ASKPASS="$HOME/.local/bin/askpass"
 case "$chosen" in
-	"  Power Off") poweroff || sudo -A poweroff ;;
-	"  Restart") reboot || sudo -A reboot ;;
-	"  Lock") sh $HOME/.local/bin/lock ;;
-	"  Log Out") bspc quit ;;
+	$poweroff) poweroff || sudo -A poweroff ;;
+	$restart) reboot || sudo -A reboot ;;
+	$lock) sh $HOME/.local/bin/lock ;;
+	$logout) bspc quit ;;
 	*) exit 1 ;;
 esac

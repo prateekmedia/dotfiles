@@ -1,14 +1,10 @@
 #! /usr/bin/bash
 
-# Set Correct Scaling
-xrandr --output HDMI-0 --scale 0.5
-#xrandr -s 1920x1080
-
 #Autostart
-pgrep -x sxhkd > /dev/null || sxhkd > /dev/null &!
-pkill picom; picom --experimental-backends &
-pkill dunst; dunst &
-pkill ksuperkey; ksuperkey -e 'Super_L=Alt_L|F1' &
+pgrep -x sxhkd > /dev/null || sxhkd &
+killall picom; picom --experimental-backends &
+killall dunst; dunst &
+killall ksuperkey; ksuperkey -e 'Super_L=Alt_L|F1' &
 feh --bg-fill -r -z ~/Pictures/Wallpapers &
 redshift -x && redshift -O 4000k &
 xsetroot -cursor_name left_ptr &

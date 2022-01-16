@@ -1,9 +1,10 @@
 #Prompt
 PS1="%F{green}%B%~/%b%f "
 
-#Exports 
-export QT_QPA_PLATFORMTHEME=qt5ct
-export PATH="$HOME/.local/bin/:$PATH"
+# Source
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # Aliases
 alias ls='ls --color=auto'
@@ -20,22 +21,16 @@ alias mv='printf "\033[1;34m" && mv -v'
 alias mkdir='printf "\033[1;33m" && mkdir -v'
 alias rmdir='printf "\033[1;35m" && rmdir -v'
 
-# Tab completion
-autoload -U compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots)
-
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 #binds
 bindkey "^[[3~" delete-char
 bindkey "^A" beginning-of-line
 bindkey "^Q" end-of-line
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+
+# Exports
+export QT_QPA_PLATFORMTHEME=gtk2
+export PATH="$HOME/.local/bin/:$PATH"
 
 # Flutter sdk
 export PATH="$HOME/dev/flutter/bin:$PATH"

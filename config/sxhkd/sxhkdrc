@@ -10,7 +10,7 @@ alt + F1
 
 #Screenshot
 Print
-  flameshot full -p ~/Pictures/
+  ~/.local/bin/screenshot
 
 alt + Print
   flameshot gui
