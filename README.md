@@ -20,7 +20,7 @@
 
 # KeyBinds
 ## General
-| Key | Function |
+| Key | Action |
 | --- | -------- |
 | super + [1-9] | focus on desktop 1-9 |
 | super + shift + [1-9] | move focused window to desktop 1-9 |
@@ -43,7 +43,7 @@
 | super + g | Geany |
 | super + f | File Manager |
 
-# Rofi Scripts
+## Rofi Scripts
 | Key | Script |
 | --- | ------ |
 | super + b | Bluetooth menu |
@@ -52,31 +52,32 @@
 | super + x | Power Menu |
 
 # Requirements
-- ksuperkey - For Binding Alt F1 to super
-- picom-ibhagwan - The `next-rebase` branch of ibhagwan's picom fork
+| App | Reason |
+| --- | ------ |
+| ksuperkey | For Binding Alt F1 to super |
+| picom-ibhagwan | The `next-rebase` branch of ibhagwan's picom fork |
 
 # Stuffs In Rice
-```
-  WM: bspwm (maintained), awesome-wm, i3-gaps
-  Bar: polybar
-  Compositor: picom-ibhwagan
-  AppLauncher: rofi
-  Font: JetBrainsMono Nerd Font, feather
-  LockScreen: i3lock-color
-  Notification: dunst
-  PdfReader: zathura
-  Shell: bash, zsh
-  Terminal: alacritty, kitty
-```
+| Stuff | Value |
+| ---- | ----- |
+| WM | bspwm (**Note:** `awesome-wm`, `i3-gaps` are not maintained) |
+| Bar | polybar |
+| Compositor | picom |
+| AppLauncher | rofi |
+| Font | JetBrainsMono Nerd Font, feather |
+| LockScreen | i3lock-color |
+| Notification | dunst |
+| PdfReader | zathura |
+| Shell | bash, zsh, fish |
+| Terminal | kitty |
 
 # Others
-<pre><code>
-  ImageViewer: feh/qeh
-  MusicPlayer: musikcube
-  Fetch: <a href="https://github.com/Manas140/fetch">fetch</a>
-  MusicVisualiser: cava
-  ScreenShot: flameshot, maim
-  TextEditor: nvim - <a href="https://github.com/Nvchad">Nvchad</a>
-  FileManager: pcmanfm, thunar, ranger
-</code></pre>
-
+| Category | App |
+| -------- | --- |
+| ImageViewer | feh/qeh |
+| MusicPlayer | musikcube |
+| Fetch | <a href="https://github.com/Manas140/fetch">fetch</a> |
+| MusicVisualiser | cava |
+| ScreenShot | flameshot, maim |
+| TextEditor | nvim - <a href="https://github.com/Nvchad">Nvchad</a> |
+| FileManager | pcmanfm, thunar, ranger |
