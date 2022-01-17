@@ -1,7 +1,7 @@
 configuration {
   modi: "drun";
   display-drun: "";
-  drun-display-format: "{icon}";
+  drun-display-format: "{icon} {name}";
   show-icons: true;
   font: "JetBrainsMono Nerd Font 10";
 }
@@ -9,9 +9,9 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg: #151515;
+  bg: #15151533;
   fg: #E8E3E3;
-  al: #2e2e2e;
+  al: #2e2e2eEE;
   background-color: @bg;
   text-color: @fg;
 }
@@ -49,7 +49,6 @@ element selected {
   background-color: @al;
 }
 element-text, element-icon {
-  background-color: inherit;
   text-color: inherit;
 }
 

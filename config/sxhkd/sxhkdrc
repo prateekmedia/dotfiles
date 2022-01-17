@@ -27,11 +27,11 @@ super + Escape
 
 #Hardware
 XF86AudioRaiseVolume 
-  changevolume up
+  ~/.local/bin/changevolume up
 XF86AudioLowerVolume 
-  changevolume down
+  ~/.local/bin/changevolume down
 XF86AudioMute
-  changevolume mute
+  ~/.local/bin/changevolume mute
 XF86MonBrightnessUp
   xbacklight +5
 XF86MonBrightnessDown

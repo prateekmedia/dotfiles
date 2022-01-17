@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#! /bin/sh
 
 #Autostart
 pgrep -x sxhkd > /dev/null || sxhkd &
@@ -22,35 +22,27 @@ bspc config gapless_monocle false
 bspc config focus_follows_pointer true
 
 # workspace 1 (Terminals)
-declare -a terminal=(kitty Alacritty Xfce4-terminal)
-for i in ${terminal[@]}; do
+for i in kitty Alacritty Xfce4-terminal; do
     bspc rule -a $i desktop='^1' follow=on focus=on; done
 
 # workspace 2 (Internet Browser)
-declare -a web=(Firefox persepolis discord)
-for i in ${web[@]}; do
+for i in Firefox persepolis discord; do
     bspc rule -a $i desktop='^2' follow=on focus=on; done
 
 # workspace 3 (Files)
-declare -a filem=(Thunar Pcmanfm qBittorrent)
-for i in ${filem[@]}; do
+for i in Thunar Pcmanfm qBittorrent; do
     bspc rule -a $i desktop='^3' follow=on focus=on; done
 
 # workspace 4 (Text Editor)
-declare -a office=(Code VSCodium Geany)
-for i in ${office[@]}; do
+for i in Code VSCodium Geany "Code - OSS"; do
     bspc rule -a $i desktop='^4' follow=on focus=on; done
 
-bspc rule -a "Code - OSS" desktop='^4' follow=on focus=on
-
 # workspace 5 (Media)
-declare -a media=(vlc obs mpv mplayer lxmusic Gimp Gimp-2.10 \
-"VirtualBox Manager")
-for i in ${media[@]}; do
+for i in vlc obs mpv mplayer lxmusic Gimp "Gimp-2.10" \
+	"VirtualBox Manager"; do
     bspc rule -a $i desktop='^5' follow=on focus=on; done
 
 #floating windows
-declare -a floats=(Alafloat Lxappearance Arandr sxiv mpv \
-Viewnior mplayer2 feh Nm-connection-editor Matplotlib Yad)
-for i in ${floats[@]}; do
+for i in Alafloat Lxappearance Arandr sxiv mpv \
+Viewnior mplayer2 feh Nm-connection-editor Matplotlib Yad; do
     bspc rule -a $i state=floating follow=on focus=on; done
