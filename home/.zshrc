@@ -21,6 +21,14 @@ alias mv='printf "\033[1;34m" && mv -v'
 alias mkdir='printf "\033[1;33m" && mkdir -v'
 alias rmdir='printf "\033[1;35m" && rmdir -v'
 
+
+# History
+HISTSIZE=500
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+
 #binds
 bindkey "^[[3~" delete-char
 bindkey "^A" beginning-of-line
