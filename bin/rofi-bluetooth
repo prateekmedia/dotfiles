@@ -61,7 +61,7 @@ toggle_scan() {
         bluetoothctl scan off
         show_menu
     else
-        bluetoothctl scan on &
+        bluetoothctl --timeout 5 scan on &
         echo "Scanning..."
         sleep 5
         show_menu
@@ -249,7 +249,7 @@ show_menu() {
             mac=$(echo $device | cut -d ' ' -f 2)
             if device_connected "$mac"
             then
-                echo "$device_name(connected)"
+                echo "$device_name (✓)"
             else
                 echo "$device_name"
             fi
@@ -288,7 +288,7 @@ show_menu() {
             toggle_pairable
             ;;
         *)
-            device=$(bluetoothctl devices | grep "$chosen")
+	    device=$(bluetoothctl devices | grep "$(echo $chosen | sed 's/ (✓)//')")
             # Open a submenu if a device is selected
             if [[ $device ]]; then device_menu "$device"; fi
             ;;

@@ -43,6 +43,6 @@ for i in vlc obs mpv mplayer lxmusic Gimp "Gimp-2.10" \
     bspc rule -a $i desktop='^5' follow=on focus=on; done
 
 #floating windows
-for i in Alafloat Lxappearance Arandr sxiv mpv \
+for i in Alafloat Lxappearance Arandr Sxiv mpv imv \
 Viewnior mplayer2 feh Nm-connection-editor Matplotlib Yad; do
     bspc rule -a $i state=floating follow=on focus=on; done
