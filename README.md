@@ -9,7 +9,7 @@
 
 # Preview
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/41370460/149572672-1ebdafa8-491d-4427-bfce-9bff40ea3bd1.gif"> 
+  <img src="https://user-images.githubusercontent.com/41370460/150593099-4b9e53c1-527a-40f2-9054-03cf037d0769.gif"> 
 </p>
 
 # Installation
