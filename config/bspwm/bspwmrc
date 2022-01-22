@@ -22,27 +22,34 @@ bspc config gapless_monocle false
 bspc config focus_follows_pointer true
 
 # workspace 1 (Terminals)
-for i in kitty Alacritty Xfce4-terminal; do
+for i in kitty Alacritty Xfce4-terminal; do \
     bspc rule -a $i desktop='^1' follow=on focus=on; done
 
 # workspace 2 (Internet Browser)
-for i in Firefox persepolis discord; do
+for i in Firefox Microsoft-edge-beta persepolis; do \
     bspc rule -a $i desktop='^2' follow=on focus=on; done
 
 # workspace 3 (Files)
-for i in Thunar Pcmanfm qBittorrent; do
+for i in Thunar Pcmanfm qBittorrent; do \
     bspc rule -a $i desktop='^3' follow=on focus=on; done
 
 # workspace 4 (Text Editor)
-for i in Code VSCodium Geany "Code - OSS"; do
+for i in Code VSCodium Geany; do \
     bspc rule -a $i desktop='^4' follow=on focus=on; done
 
+bspc rule -a "Code - OSS" desktop='^4' follow=on focus=on
+
 # workspace 5 (Media)
-for i in vlc obs mpv mplayer lxmusic Gimp "Gimp-2.10" \
-	"VirtualBox Manager"; do
+for i in vlc obs mpv mplayer lxmusic Gimp; do \
     bspc rule -a $i desktop='^5' follow=on focus=on; done
+
+# workspace 6 (Chat)
+for i in TelegramDesktop discord Mailspring; do \
+    bspc rule -a $i desktop='^6' follow=on focus=on; done
+
+bspc rule -a "Microsoft Teams - Preview" desktop='^6' follow=on focus=on;
 
 #floating windows
 for i in Alafloat Lxappearance Arandr Sxiv mpv imv \
-Viewnior mplayer2 feh Nm-connection-editor Matplotlib Yad; do
+Viewnior mplayer2 feh Nm-connection-editor Matplotlib Yad; do \
     bspc rule -a $i state=floating follow=on focus=on; done

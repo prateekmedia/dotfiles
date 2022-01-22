@@ -6,7 +6,7 @@ launcher="3. Interactive Launcher"
 
 chosen=$(printf "$full\n$gui\n$launcher" | rofi -dmenu -i -p "Screenshot")
 case "$chosen" in
-        $full) flameshot full -p ~/Pictures/ -d 40 ;;
+        $full) flameshot full -p ~/Pictures/ -d 200 ;;
         $gui) flameshot gui ;;
         $launcher) flameshot launcher ;;
         *) exit 1 ;;
