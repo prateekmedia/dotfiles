@@ -6,6 +6,8 @@ window:
   scrolling:
     history: 15
 
+background_opacity: 0.68
+
 # Setting zsh as the default shell
 shell:
     program: /bin/zsh
@@ -31,4 +33,4 @@ font:
   size: 14
 
 import:
-  - ~/.config/alacritty/paradise.yml
+  - ~/.config/alacritty/catppuccin.yml

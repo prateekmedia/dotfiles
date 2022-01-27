@@ -3,7 +3,7 @@ super + x
   ~/.local/bin/powermenu
 
 super + Return
-   kitty &> /dev/null || alacritty &> /dev/null
+   alacritty &> /dev/null || kitty &> /dev/null
 
 alt + F1
   rofi -show
@@ -65,7 +65,7 @@ super + @b
 
 # Apps
 super + @w
-  firefox &> /dev/null
+  flatpak run com.microsoft.Edge &> /dev/null || firefox &> /dev/null
 
 super + @g
   geany &> /dev/null

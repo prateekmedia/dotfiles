@@ -9,9 +9,9 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg: #15151533;
-  fg: #E8E3E3;
-  al: #2e2e2e88;
+  bg: #0D141633;
+  fg: #d9e0ee;
+  al: #363d3eAA;
   background-color: @bg;
   text-color: @fg;
 }
