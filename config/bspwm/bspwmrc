@@ -27,7 +27,7 @@ for i in kitty Alacritty Xfce4-terminal; do \
     bspc rule -a $i desktop='^1' follow=on focus=on; done
 
 # workspace 2 (Browser Related)
-for i in Firefox Microsoft-edge-beta persepolis; do \
+for i in Firefox Microsoft-edge persepolis; do \
     bspc rule -a $i desktop='^2' follow=on focus=on; done
 
 # workspace 3 (Files)
@@ -35,7 +35,7 @@ for i in Thunar Pcmanfm qBittorrent; do \
     bspc rule -a $i desktop='^3' follow=on focus=on; done
 
 # workspace 4 (Text Editor / Office Suites)
-for i in Code VSCodium Geany DesktopEditors; do \
+for i in Code VSCodium Gnome-builder Geany DesktopEditors; do \
     bspc rule -a $i desktop='^4' follow=on focus=on; done
 
 bspc rule -a "Code - OSS" desktop='^4' follow=on focus=on

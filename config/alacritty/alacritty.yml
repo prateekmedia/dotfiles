@@ -5,8 +5,7 @@ window:
     y: 20
   scrolling:
     history: 15
-
-background_opacity: 0.68
+  opacity: 0.68
 
 # Setting zsh as the default shell
 shell:

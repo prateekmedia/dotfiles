@@ -65,7 +65,7 @@ super + @b
 
 # Apps
 super + @w
-  flatpak run com.microsoft.Edge &> /dev/null || firefox &> /dev/null
+  microsoft-edge-stable &> /dev/null || firefox &> /dev/null
 
 super + @g
   geany &> /dev/null

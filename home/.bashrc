@@ -6,7 +6,7 @@ PS1='\033[1;32m\w/\033[0;0m '
 
 #Exports 
 export QT_QPA_PLATFORMTHEME=gtk2
-export PATH="$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share/applications:/usr/share"
 
 # Aliases

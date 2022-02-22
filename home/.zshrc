@@ -38,7 +38,7 @@ bindkey "^[[1;5D" backward-word
 
 # Exports
 export QT_QPA_PLATFORMTHEME=gtk2
-export PATH="$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share/applications:/usr/share"
 
 # Flutter sdk
@@ -46,5 +46,5 @@ export PATH="$HOME/dev/flutter/bin:$PATH"
 
 #Android studio
 export ANDROID_HOME="$HOME/Android/Sdk"
-export PATH="$ANDROID_HOME/tools/bin:$PATH"
+export PATH="$ANDROID_HOME/cmdline-tools/6.0:$ANDROID_HOME/cmdline-tools/6.0/bin:$PATH"
 export PATH="$ANDROID_HOME/platform-tools:$PATH"

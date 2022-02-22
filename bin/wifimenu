@@ -15,7 +15,7 @@ chosen_network=$(echo -e "$toggle\n$wifi_list" | uniq -u | rofi -dmenu -i -selec
 # Get name of connection
 chosen_id=$(echo "${chosen_network:3}" | xargs)
 
-if [ -z "$chosen_network"]; then
+if [ -z "$chosen_network" ]; then
 	exit 1
 elif [ "$chosen_network" = "直  Enable Wi-Fi" ]; then
 	nmcli radio wifi on
