@@ -10,7 +10,7 @@ alt + F1
 
 #Screenshot
 Print
-  ~/.local/bin/screenshot
+  ~/.local/bin/rofi-screenshot
 
 alt + Print
   flameshot gui
