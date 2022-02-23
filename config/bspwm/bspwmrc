@@ -10,6 +10,7 @@ feh --bg-fill -r -z ~/Pictures/Wallpapers &
 redshift -x && redshift &
 xsetroot -cursor_name left_ptr &
 $HOME/.config/polybar/launch.sh &
+command -v rumno-background && rumno-background || true &
 
 #Workspaces
 bspc monitor -d 1 2 3 4 5 6
@@ -31,7 +32,7 @@ for i in Firefox Microsoft-edge persepolis; do \
     bspc rule -a $i desktop='^2' follow=on focus=on; done
 
 # workspace 3 (Files)
-for i in Thunar Pcmanfm qBittorrent; do \
+for i in Thunar org.gnome.Nautilus Pcmanfm qBittorrent; do \
     bspc rule -a $i desktop='^3' follow=on focus=on; done
 
 # workspace 4 (Text Editor / Office Suites)

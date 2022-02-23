@@ -1,14 +1,7 @@
 #! /usr/bin/env python3
+# https://github.com/YingYoh09/polybar-mediaplayer
 
 import subprocess
-
-def truncate(name, trunclen):
-    if len(name) > trunclen:
-        name = name[:trunclen]
-        name += '...'
-        if ('(' in name) and (')' not in name):
-            name += ')'
-    return name
 
 def runcmd(cmd):
     p = subprocess.Popen(cmd, shell=True , stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -29,6 +22,3 @@ elif stdout =='Paused':
 else:
     print('', end=' ')
 
-
-stdout, stderr = runcmd('playerctl metadata --format " {{ title }} - {{ artist }}"')
-print(truncate(stdout, 20))

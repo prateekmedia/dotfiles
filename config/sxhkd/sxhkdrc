@@ -16,7 +16,7 @@ alt + Print
   flameshot gui
 
 #Workspaces
-super + {_,shift + }{1-9,0}
+super + {F,shift + }{1-9,1}
   bspc {desktop -f,node -d} '^{1-9,10}'paces 
 
 super + shift + l

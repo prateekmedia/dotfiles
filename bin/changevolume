@@ -1,8 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 function send_notification() {
 	volume=$(pamixer --get-volume)
-	dunstify -a "changevolume" -u normal -r "9993" -h int:value:"$volume" -i "volume-$1" "Volume: ${volume}%" -t 2000
+  if command -v rumno &> /dev/null; then
+    rumno -v $volume
+  else
+	  dunstify -a "changevolume" -u normal -r "9993" -h int:value:"$volume" -i "volume-$1" "Volume: ${volume}%" -t 2000
+  fi
 }
 
 case $1 in
@@ -20,8 +24,12 @@ down)
 mute)
 	pamixer -t
 	if $(pamixer --get-mute); then
-		dunstify -i volume-mute -a "changevolume" -t 2000 -r 9993 -u normal "Muted"
-	else
+    if command -v rumno &> /dev/null; then
+      rumno -m
+    else
+		  dunstify -i volume-mute -a "changevolume" -t 2000 -r 9993 -u normal "Muted"
+	  fi
+  else
 		send_notification up
 	fi
 	;;
