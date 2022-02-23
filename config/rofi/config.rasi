@@ -22,7 +22,7 @@ window {
   border-radius: 0;
   location: south west;
   width: 25%;
-  height: 97%;
+  height: calc( 100% - 40px );
   /* height: 100%; */
   spacing: 0;
   orientation: horizontal;
