@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Based on https://github.com/ericmurphyxyz/archrice/blob/master/.local/bin/changevolume
 
 function send_notification() {
 	volume=$(pamixer --get-volume)

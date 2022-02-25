@@ -1,9 +1,10 @@
 #! /bin/sh
+# Based on https://github.com/ericmurphyxyz/archrice/blob/master/.local/bin/powermenu
 
-poweroff="  Power Off"
-restart="  Restart"
-lock="  Lock"
-logout="  Log Out"
+poweroff="  Power Off"
+restart="  Restart"
+lock="  Lock"
+logout="  Log Out"
 
 chosen=$(printf "$poweroff\n$restart\n$lock\n$logout" | rofi -dmenu -i -p "Power options")
 export SUDO_ASKPASS="$HOME/.local/bin/askpass"

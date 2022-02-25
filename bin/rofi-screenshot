@@ -1,19 +1,20 @@
-#!/usr/bin/sh
+#!/bin/sh
+# Based on https://github.com/danrog303/rofi-screenshot
 
 # CONFIG
 SAVE_DIR=$(xdg-user-dir PICTURES)
 # END CONFIG
 
 # LANGUAGE STRINGS
-lang_scr_whole="📷 Screenshot of whole screen"
-lang_scr_fragment="📷 Screenshot of selected region"
+lang_scr_whole="  Screenshot of whole screen"
+lang_scr_fragment="  Screenshot of selected region"
 
-lang_delay="⏰ Delay:"
-lang_nodelay="🕰 No delay"
+lang_delay=" Delay:"
+lang_nodelay=" No delay"
 
-lang_save_png="🖼️ Save as png"
-lang_save_jpg="🖼️ Save as jpg"
-lang_copy_clipboard="🖼️ Copy to clipboard"
+lang_save_png=" Save as png"
+lang_save_jpg=" Save as jpg"
+lang_copy_clipboard=" Copy to clipboard"
 
 lang_copied="Screenshot copied to clipboard"
 lang_saved="Screenshot saved to file"

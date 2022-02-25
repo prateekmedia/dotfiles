@@ -1,4 +1,5 @@
 #!/bin/sh
+# Based on https://github.com/Manas140/dotfiles/blob/main/bin/lock
 
 greet="Welcome, Back"
 color="#E8E3E3"
