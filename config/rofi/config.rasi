@@ -53,3 +53,4 @@ element-text, element-icon {
   text-color: inherit;
 }
 
+element-icon { size: 2.7ch ; }
