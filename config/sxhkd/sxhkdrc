@@ -71,7 +71,7 @@ super + @g
   geany &> /dev/null
 
 super + @f
-  pcmanfm &> /dev/null || thunar &> /dev/null
+  pcmanfm &> /dev/null || thunar &> /dev/null || nautilus &> /dev/null
 
 super + @c
   code-oss &> /dev/null || code &> /dev/null || codium &> /dev/null

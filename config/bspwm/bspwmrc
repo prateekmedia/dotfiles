@@ -32,7 +32,7 @@ for i in Firefox Microsoft-edge persepolis; do \
     bspc rule -a $i desktop='^2' follow=on focus=on; done
 
 # workspace 3 (Files)
-for i in Thunar org.gnome.Nautilus Pcmanfm qBittorrent; do \
+for i in Thunar Org.gnome.Nautilus Pcmanfm qBittorrent; do \
     bspc rule -a $i desktop='^3' follow=on focus=on; done
 
 # workspace 4 (Text Editor / Office Suites)

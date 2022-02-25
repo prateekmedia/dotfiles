@@ -22,7 +22,7 @@
 ## General
 | Key | Action |
 | --- | -------- |
-| super + [1-9] | focus on desktop 1-9 |
+| super + [F1-F9] | focus on desktop 1-9 |
 | super + shift + [1-9] | move focused window to desktop 1-9 |
 | super + shift + l | lock screen (i3 lock) |
 | super + esc | restart wm | 
@@ -80,4 +80,4 @@
 | MusicVisualiser | cava |
 | ScreenShot | flameshot, maim |
 | TextEditor | nvim - <a href="https://github.com/Nvchad">Nvchad</a> |
-| FileManager | pcmanfm, thunar, ranger |
+| FileManager | pcmanfm, thunar, nautilus, ranger |
