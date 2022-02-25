@@ -43,6 +43,7 @@ entry {
 }
 element {
   padding: 0.75em;
+  background-color: transparent;
 }
 element selected {
   background-color: @al;
