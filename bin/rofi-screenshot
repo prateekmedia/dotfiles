@@ -7,7 +7,7 @@ SAVE_DIR=$(xdg-user-dir PICTURES)
 
 # LANGUAGE STRINGS
 lang_scr_whole="  Screenshot of whole screen"
-lang_scr_fragment="  Screenshot of selected region"
+lang_scr_fragment="  Screenshot of a region"
 
 lang_delay=" Delay:"
 lang_nodelay=" No delay"
@@ -36,10 +36,6 @@ rofi_scr_type=$(
     rofi -dmenu -p "screenshot" -lines 2
 ) || exit 4
 
-if [ "$rofi_scr_type" = "$lang_scr_fragment" ]; then
-    screen_fragment=$(slop --highlight --tolerance=0 --color=0.3,0.4,0.6,0.4 -n -f '-g %g ')
-fi
-
 if [ "$rofi_delay" = "$lang_delay 1s" ]; then
     sleep 1
 elif [ "$rofi_delay" = "$lang_delay 3s" ]; then
@@ -50,27 +46,30 @@ elif [ "$rofi_delay" = "$lang_delay 10s" ]; then
     sleep 10
 fi
 
-filename="Screenshot $(date '+%Y-%m-%d, %R:%S')"
-filepath="$SAVE_DIR/$filename.png"
-tempfilepath="/tmp/$filename.png"
+filename="Screenshot_$(date '+%Y-%m-%d, %R:%S')"
+format="png"
+
+if [ "$rofi_save_method" = "$lang_save_jpg" ]; then
+    format="jpg"
+fi
+
+filepath="$SAVE_DIR/$filename.$format"
+tempfilepath="/tmp/$filename.$format"
+
 
 if [ "$rofi_scr_type" = "$lang_scr_fragment" ]; then
-    ffcast -q "$screen_fragment" png "$tempfilepath"
+    maim -f $format -s "$tempfilepath"
 else
-    ffcast -q png "$tempfilepath"
+    maim -f $format "$tempfilepath"
 fi
 
 
 if [ "$rofi_save_method" = "$lang_copy_clipboard" ]; then
     xclip -selection clipboard -t "image/png" "$tempfilepath"
     notify-send "$lang_copied"
-elif [ "$rofi_save_method" = "$lang_save_jpg" ]; then
-    convert "/tmp/$filename.png" "/tmp/$filename.jpg"
-    cp "/tmp/$filename.jpg" "$SAVE_DIR"
-    notify-send "$lang_saved" "$SAVE_DIR/$filename.jpg"
 else
     cp "$tempfilepath" "$filepath"
-    notify-send "$lang_saved" "$SAVE_DIR/$filename.png"
+    notify-send "$lang_saved" "$SAVE_DIR/$filename.$format"
 fi
 
 rm "$tempfilepath"
