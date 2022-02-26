@@ -52,24 +52,25 @@
 | super + x | Power Menu |
 
 # Requirements
-| App | Reason |
+| App | Why? |
 | --- | ------ |
 | ksuperkey | For Binding Alt F1 to super |
 | picom-ibhagwan | The `next-rebase` branch of ibhagwan's picom fork |
 
 # Stuffs In Rice
-| Stuff | Value |
+| Stuff | Programs |
 | ---- | ----- |
 | WM | bspwm (**Note:** `awesome-wm`, `i3-gaps` are not maintained) |
 | Bar | polybar |
 | Compositor | picom |
 | AppLauncher | rofi |
-| Font | JetBrainsMono Nerd Font, feather |
+| Font | JetBrainsMono Nerd Font, material |
 | LockScreen | i3lock-color |
 | Notification | dunst |
 | PdfReader | zathura |
 | Shell | bash, zsh, fish |
 | Terminal | kitty |
+| Volume OSD | rumno |
 
 # Others
 | Category | App |
@@ -78,6 +79,6 @@
 | MusicPlayer | musikcube |
 | Fetch | <a href="https://github.com/Manas140/fetch">fetch</a> |
 | MusicVisualiser | cava |
-| ScreenShot | flameshot, maim |
+| ScreenShot | maim, flameshot |
 | TextEditor | nvim - <a href="https://github.com/Nvchad">Nvchad</a> |
-| FileManager | pcmanfm, thunar, nautilus, ranger |
+| FileManager | nautilus, thunar, pcmanfm, ranger |
